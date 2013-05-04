@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<app title="The Villein" file="The Villein" main="Main" version="0.0.1" company="RexPeppers" />
+	
+	<window width="640" height="480" fps="30" orientation="landscape" resizable="true" fullscreen="false" />
+ 	
+	<set name="BUILD_DIR" value="export" />
+	
+	<!--<setenv name="no_console" value="1" />-->
+	
+	<classpath name="source" />
+	
+	<assets path="assets" >
+		<sound path="audio/water.wav" id="water" type="sound" />
+		<sound path="audio/herd.wav" id="herd" type="sound" />
+		<sound path="audio/crops.wav" id="crops" type="sound" />
+		<sound path="audio/forest.wav" id="forest" type="sound" />
+		<sound path="audio/castle.wav" id="castle" type="sound" />
+		<sound path="audio/mine.wav" id="mine" type="sound" />
+		<sound path="audio/fail.wav" id="fail" type="sound" />
+		<music path="audio/loop2.mp3" />	
+	</assets>
+	
+	
+        <assets path="assets" exclude="*.ogg" if="flash" />
+        <assets path="assets" unless="flash" />
+	
+	<icon name="assets/icons/well32.png" size="32" />
+	
+	<haxelib name="nme" />
+	<haxelib name="flixel"/>
+	<haxelib name="actuate" />
+	<haxelib name="kong.hx" if="flash" />
+</project>
